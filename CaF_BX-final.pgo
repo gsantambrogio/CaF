@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<Mixture AllowComplex="True" Version="PGOPHER 10.1.182 4 Dec 2018 16:58 32 bit (Delphi 18.5/18)" nDF="100001">
+  <Parameter Name="SmallE" Value="2E-16"/>
+  <Species Name="Species" Jmax="33">
+    <LinearMolecule Name="CaF" nNuclei="1">
+      <LinearManifold Name="X2Sigma" Initial="True" LimitSearch="True" AutoQConverge="False">
+        <Linear Name="Xv=0" S="1" gerade="False">
+          <Parameter Name="B" Value="0.34248818"/>
+          <Parameter Name="gamma" Value="0.001317509"/>
+          <Parameter Name="D" Value="4.6877E-7"/>
+          <Parameter Name="H" Value="1.92E-14"/>
+          <Parameter Name="gammaD" Value="3.073E-10"/>
+          <LinearNucleus Name="Nucleus1" Spin="1">
+            <Parameter Name="b" Value="0.00372"/>
+            <Parameter Name="c" Value="0.00111"/>
+          </LinearNucleus>
+        </Linear>
+      </LinearManifold>
+      <TransitionMoments Bra="X2Sigma" Ket="X2Sigma">
+        <SpinTransitionMoment Component="0" Bra="Xv=0" Ket="Xv=0"/>
+        <SpinTransitionMoment Component="2" Bra="Xv=0" Ket="Xv=0"/>
+      </TransitionMoments>
+      <LinearManifold Name="B2Sigma" LimitSearch="True">
+        <Linear Name="Bv=0" S="1" gerade="False">
+          <Parameter Name="Origin" Value="18832.031"/>
+          <Parameter Name="B" Value="0.341058"/>
+          <Parameter Name="gamma" Value="-0.00164"/>
+          <Parameter Name="D" Value="4.833E-7"/>
+          <Parameter Name="H" Value="-6.73E-14"/>
+          <Parameter Name="gammaD" Value="-5.1E-7"/>
+          <LinearNucleus Name="Nucleus1" Spin="1">
+            <Parameter Name="b" Value="0.000112"/>
+            <Parameter Name="c" Value="0.001668"/>
+          </LinearNucleus>
+        </Linear>
+      </LinearManifold>
+      <TransitionMoments Bra="B2Sigma" Ket="B2Sigma">
+        <SpinTransitionMoment Component="0" Bra="Bv=0" Ket="Bv=0">
+          <Parameter Name="Strength" Value="2.15"/>
+        </SpinTransitionMoment>
+        <SpinTransitionMoment Component="2" Bra="Bv=0" Ket="Bv=0"/>
+      </TransitionMoments>
+      <TransitionMoments Bra="X2Sigma" Ket="B2Sigma">
+        <SphericalTransitionMoment Bra="Xv=0" Ket="Bv=0"/>
+      </TransitionMoments>
+    </LinearMolecule>
+  </Species>
+  <Parameter Name="Gaussian" Value="0.0001"/>
+  <Parameter Name="OThreshold" Value="0.0001"/>
+  <Parameter Name="Temperature" Value="4"/>
+  <Parameter Name="Fmin" Value="18830.6393715594"/>
+  <Parameter Name="Fmax" Value="18830.6724202596"/>
+  <FormSettings Name="LevelWindow" ExternalField="True" LimitJ="False" XMax="12" XMin="-12" XQuantumNumber="N" ObsLower="True" FieldSamples="11" ESweep="False" BSweep="True">
+    <Parameter Name="Ymax" Value="0.007114237"/>
+    <Parameter Name="Ymin" Value="-0.00768623"/>
+    <Parameter Name="Reduction" Value="0.34"/>
+    <Parameter Name="MaxField" Value="0.002"/>
+    <Parameter Name="ShiftMult" Value="10"/>
+  </FormSettings>
+  <FormSettings Name="ConstantsWindow" ActiveObject="LinearNucleus: Species - CaF - X2Sigma - Xv=0 - Nucleus1"/>
+  <FormSettings Name="TransitionWindow" JChange="-2"/>
+  <FormSettings Name="LogWindow" ObsFileName="..\..\..\Applications\pgopher_cocoa.app"/>
+  <FormSettings Name="StatesWindow" ActiveObject="Linear: Species - LinearMolecule - Excited - v=0" J="21" Blocked="True"/>
+  <FormSettings Name="LineWindow"
+Lines="
+CaF	A2Pi	2.5	0	3	X2Sigma	3.5	1	1	11538.70786	1	.00275222887870256	0	pP1(3.5)	A2Pi v=0 2.5  0 F1e - X2Sigma Xv=0 3.5  1 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	3	X2Sigma	4.5	0	1	11526.83552	1	.00363464719382942	0	pP1(4.5)	A2Pi v=0 3.5  1 F1e - X2Sigma Xv=0 4.5  2 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	3	X2Sigma	5.5	1	1	11513.80425	1	.00415473632370072	0	pP1(5.5)	A2Pi v=0 4.5  2 F1e - X2Sigma Xv=0 5.5  3 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	3	X2Sigma	6.5	0	1	11499.28568	1	.00428176922785011	0	pP1(6.5)	A2Pi v=0 5.5  3 F1e - X2Sigma Xv=0 6.5  4 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	0	3	X2Sigma	7.5	1	1	11483.18656	.3	.00417620704297389	0	pP1(7.5)	A2Pi v=0 6.5  4 F1e - X2Sigma Xv=0 7.5  5 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	1	2	X2Sigma	8.5	0	1	11465.485	1	.00347979275298323	0	pP1(8.5)	A2Pi v=0 7.5  5 F1e - X2Sigma Xv=0 8.5  6 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	0	2	X2Sigma	9.5	1	1	11446.171	1	.00328854002036959	0	pP1(9.5)	A2Pi v=0 8.5  6 F1e - X2Sigma Xv=0 9.5  7 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	1	2	X2Sigma	10.5	0	1	11425.261	1	.00298439359899498	0	pP1(10.5)	A2Pi v=0 9.5  7 F1e - X2Sigma Xv=0 10.5  8 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	10.5	0	2	X2Sigma	11.5	1	1	11402.783	1	.00261413169518233	0	pP1(11.5)	A2Pi v=0 10.5  8 F1e - X2Sigma Xv=0 11.5  9 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	11.5	1	2	X2Sigma	12.5	0	1	11378.86	1	.00219973778327212	0	pP1(12.5)	A2Pi v=0 11.5  9 F1e - X2Sigma Xv=0 12.5 10 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	12.5	0	1	X2Sigma	13.5	1	1	11352.543	1	.00177392208810627	0	pP1(13.5)	A2Pi v=0 12.5 10 F1e - X2Sigma Xv=0 13.5 11 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	13.5	1	1	X2Sigma	14.5	0	1	11325.674	1	.0014557459682025	0	pP1(14.5)	A2Pi v=0 13.5 11 F1e - X2Sigma Xv=0 14.5 12 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	14.5	0	1	X2Sigma	15.5	1	1	11297.066	1	.00113093764335955	0	pP1(15.5)	A2Pi v=0 14.5 12 F1e - X2Sigma Xv=0 15.5 13 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	15.5	1	1	X2Sigma	16.5	0	1	11266.963	1	.000853314860550396	0	pP1(16.5)	A2Pi v=0 15.5 13 F1e - X2Sigma Xv=0 16.5 14 F1e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	2.5	1	3	X2Sigma	3.5	0	1	11530.21601	1	.00194282850428206	0	pP2(3.5)	A2Pi v=0 2.5  1 F2f - X2Sigma Xv=0 3.5  2 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	3	X2Sigma	4.5	1	1	11515.11238	1	.00284974334804468	0	pP2(4.5)	A2Pi v=0 3.5  2 F2f - X2Sigma Xv=0 4.5  3 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	3	X2Sigma	5.5	0	1	11498.94979	1	.0032637219858019	0	pP2(5.5)	A2Pi v=0 4.5  3 F2f - X2Sigma Xv=0 5.5  4 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	3	X2Sigma	6.5	1	1	11481.36624	1	.00338688099069314	0	pP2(6.5)	A2Pi v=0 5.5  4 F2f - X2Sigma Xv=0 6.5  5 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	3	X2Sigma	7.5	0	1	11462.251	1	.002932214816319	0	pP2(7.5)	A2Pi v=0 6.5  5 F2f - X2Sigma Xv=0 7.5  6 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	7.5	0	3	X2Sigma	8.5	1	1	11441.572	1	.00283574915910129	0	pP2(8.5)	A2Pi v=0 7.5  6 F2f - X2Sigma Xv=0 8.5  7 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	1	3	X2Sigma	9.5	0	1	11419.318	1	.00262387971488734	0	pP2(9.5)	A2Pi v=0 8.5  7 F2f - X2Sigma Xv=0 9.5  8 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	0	3	X2Sigma	10.5	1	1	11395.508	1	.00233451834739771	0	pP2(10.5)	A2Pi v=0 9.5  8 F2f - X2Sigma Xv=0 10.5  9 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	11.5	0	2	X2Sigma	12.5	1	1	11342.599	1	.00151719524888007	0	pP2(12.5)	A2Pi v=0 11.5 10 F2f - X2Sigma Xv=0 12.5 11 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	12.5	1	2	X2Sigma	13.5	0	1	11314.612	1	.00133887206835239	0	pP2(13.5)	A2Pi v=0 12.5 11 F2f - X2Sigma Xv=0 13.5 12 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	13.5	0	2	X2Sigma	14.5	1	1	11284.746	1	.00104622409414575	0	pP2(14.5)	A2Pi v=0 13.5 12 F2f - X2Sigma Xv=0 14.5 13 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	14.5	1	2	X2Sigma	15.5	0	1	11253.401	1	.000793741554509602	0	pP2(15.5)	A2Pi v=0 14.5 13 F2f - X2Sigma Xv=0 15.5 14 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	15.5	0	2	X2Sigma	16.5	1	1	11220.636	1	.000585494440351609	0	pP2(16.5)	A2Pi v=0 15.5 14 F2f - X2Sigma Xv=0 16.5 15 F2f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	1.5	1	3	X2Sigma	2.5	0	2	11515.47651	1	.000651854167843007	0	pP3(2.5)	A2Pi v=0 1.5  1 F3e - X2Sigma Xv=0 2.5  2 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	4	X2Sigma	3.5	1	2	11510.89779	1	.00170829546134423	0	pP3(3.5)	A2Pi v=0 2.5  2 F3e - X2Sigma Xv=0 3.5  3 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	4	X2Sigma	4.5	0	2	11494.36542	1	.0023758068113287	0	pP3(4.5)	A2Pi v=0 3.5  3 F3e - X2Sigma Xv=0 4.5  4 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	4	X2Sigma	5.5	1	2	11475.94054	1	.00268068070494306	0	pP3(5.5)	A2Pi v=0 4.5  4 F3e - X2Sigma Xv=0 5.5  5 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	4	X2Sigma	6.5	0	2	11455.821	1	.00243381494390566	0	pP3(6.5)	A2Pi v=0 5.5  5 F3e - X2Sigma Xv=0 6.5  6 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	7.5	1	4	X2Sigma	8.5	0	2	11410.66	1	.00229641128421256	0	pP3(8.5)	A2Pi v=0 7.5  7 F3e - X2Sigma Xv=0 8.5  8 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	0	4	X2Sigma	9.5	1	2	11385.685	1	.00207685989249672	0	pP3(9.5)	A2Pi v=0 8.5  8 F3e - X2Sigma Xv=0 9.5  9 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	1	4	X2Sigma	10.5	0	2	11359.159	1	.00180398424483219	0	pP3(10.5)	A2Pi v=0 9.5  9 F3e - X2Sigma Xv=0 10.5 10 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	11.5	1	3	X2Sigma	12.5	0	2	11301.412	1	.00122780191291654	0	pP3(12.5)	A2Pi v=0 11.5 11 F3e - X2Sigma Xv=0 12.5 12 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	12.5	0	3	X2Sigma	13.5	1	2	11270.363	1	.000967222968815436	0	pP3(13.5)	A2Pi v=0 12.5 12 F3e - X2Sigma Xv=0 13.5 13 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	14.5	0	3	X2Sigma	15.5	1	2	11203.962	1	.000547500090010084	0	pP3(15.5)	A2Pi v=0 14.5 14 F3e - X2Sigma Xv=0 15.5 15 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	1.5	0	3	X2Sigma	2.5	1	2	11500.78543	1	.00097236827876078	0	pP4(2.5)	A2Pi v=0 1.5  2 F4f - X2Sigma Xv=0 2.5  3 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	4	X2Sigma	3.5	0	2	11486.7474	1	.00168230736210292	0	pP4(3.5)	A2Pi v=0 2.5  3 F4f - X2Sigma Xv=0 3.5  4 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	4	X2Sigma	4.5	1	2	11468.088	1	.00178104227099318	0	pP4(4.5)	A2Pi v=0 3.5  4 F4f - X2Sigma Xv=0 4.5  5 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	4.5	1	4	X2Sigma	5.5	0	2	11447.237	1	.00200943577328576	0	pP4(5.5)	A2Pi v=0 4.5  5 F4f - X2Sigma Xv=0 5.5  6 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	5.5	0	4	X2Sigma	6.5	1	2	11424.552	1	.00207370752529447	0	pP4(6.5)	A2Pi v=0 5.5  6 F4f - X2Sigma Xv=0 6.5  7 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	6.5	1	4	X2Sigma	7.5	0	2	11400.156	1	.00200792830318199	0	pP4(7.5)	A2Pi v=0 6.5  7 F4f - X2Sigma Xv=0 7.5  8 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	1	4	X2Sigma	9.5	0	2	11346.489	1	.00162857872217332	0	pP4(9.5)	A2Pi v=0 8.5  9 F4f - X2Sigma Xv=0 9.5 10 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	0	4	X2Sigma	10.5	1	2	11317.311	1	.00138098433969212	0	pP4(10.5)	A2Pi v=0 9.5 10 F4f - X2Sigma Xv=0 10.5 11 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	10.5	1	4	X2Sigma	11.5	0	2	11286.612	1	.00113042892112905	0	pP4(11.5)	A2Pi v=0 10.5 11 F4f - X2Sigma Xv=0 11.5 12 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	11.5	0	4	X2Sigma	12.5	1	2	11254.442	1	.000895363832806332	0	pP4(12.5)	A2Pi v=0 11.5 12 F4f - X2Sigma Xv=0 12.5 13 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	12.5	1	4	X2Sigma	13.5	0	2	11220.842	1	.000687447196413727	0	pP4(13.5)	A2Pi v=0 12.5 13 F4f - X2Sigma Xv=0 13.5 14 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	1.5	1	4	X2Sigma	2.5	0	3	11478.90204	1	.00116874553902691	0	pP5(2.5)	A2Pi v=0 1.5  3 F5e - X2Sigma Xv=0 2.5  4 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	5	X2Sigma	3.5	1	3	11459.66355	1	.001635601467479	0	pP5(3.5)	A2Pi v=0 2.5  4 F5e - X2Sigma Xv=0 3.5  5 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	5	X2Sigma	5.5	1	3	11414.231	1	.00177210381218413	0	pP5(5.5)	A2Pi v=0 4.5  6 F5e - X2Sigma Xv=0 5.5  7 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	5.5	1	5	X2Sigma	6.5	0	3	11388.775	1	.00175712214413531	0	pP5(6.5)	A2Pi v=0 5.5  7 F5e - X2Sigma Xv=0 6.5  8 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	6.5	0	5	X2Sigma	7.5	1	3	11361.653	1	.00164532800815886	0	pP5(7.5)	A2Pi v=0 6.5  8 F5e - X2Sigma Xv=0 7.5  9 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	7.5	1	5	X2Sigma	8.5	0	3	11332.918	1	.00146935004017593	0	pP5(8.5)	A2Pi v=0 7.5  9 F5e - X2Sigma Xv=0 8.5 10 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	0	5	X2Sigma	9.5	1	3	11302.632	1	.00125910470315365	0	pP5(9.5)	A2Pi v=0 8.5 10 F5e - X2Sigma Xv=0 9.5 11 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	1	5	X2Sigma	10.5	0	3	11270.829	1	.0010395108571695	0	pP5(10.5)	A2Pi v=0 9.5 11 F5e - X2Sigma Xv=0 10.5 12 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	10.5	0	5	X2Sigma	11.5	1	3	11237.556	1	.000829226737146479	0	pP5(11.5)	A2Pi v=0 10.5 12 F5e - X2Sigma Xv=0 11.5 13 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	11.5	1	5	X2Sigma	12.5	0	3	11202.868	1	.000640508107402286	0	pP5(12.5)	A2Pi v=0 11.5 13 F5e - X2Sigma Xv=0 12.5 14 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	0.5	1	2	X2Sigma	1.5	0	2	11473.81104	1	.000785634717273069	0	pP6(1.5)	A2Pi v=0 0.5  3 F6f - X2Sigma Xv=0 1.5  4 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	4	X2Sigma	2.5	1	3	11452.61057	1	.00128228171043322	0	pP6(2.5)	A2Pi v=0 1.5  4 F6f - X2Sigma Xv=0 2.5  5 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	5	X2Sigma	3.5	0	3	11429.35316	1	.00153056668177527	0	pP6(3.5)	A2Pi v=0 2.5  5 F6f - X2Sigma Xv=0 3.5  6 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	5	X2Sigma	4.5	1	3	11404.282	1	.00152264342039944	0	pP6(4.5)	A2Pi v=0 3.5  6 F6f - X2Sigma Xv=0 4.5  7 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	4.5	1	5	X2Sigma	5.5	0	3	11377.521	1	.00154403975059953	0	pP6(5.5)	A2Pi v=0 4.5  7 F6f - X2Sigma Xv=0 5.5  8 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	5.5	0	5	X2Sigma	6.5	1	3	11349.136	1	.00146967719122963	0	pP6(6.5)	A2Pi v=0 5.5  8 F6f - X2Sigma Xv=0 6.5  9 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	6.5	1	5	X2Sigma	7.5	0	3	11319.184	1	.00132912981180787	0	pP6(7.5)	A2Pi v=0 6.5  9 F6f - X2Sigma Xv=0 7.5 10 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	7.5	0	5	X2Sigma	8.5	1	3	11287.7	1	.00115047011938171	0	pP6(8.5)	A2Pi v=0 7.5 10 F6f - X2Sigma Xv=0 8.5 11 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	1	5	X2Sigma	9.5	0	3	11254.72	1	.000957690820420954	0	pP6(9.5)	A2Pi v=0 8.5 11 F6f - X2Sigma Xv=0 9.5 12 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	9.5	0	5	X2Sigma	10.5	1	3	11220.286	1	.000769253923385692	0	pP6(10.5)	A2Pi v=0 9.5 12 F6f - X2Sigma Xv=0 10.5 13 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	10.5	1	5	X2Sigma	11.5	0	3	11184.438	1	.000597690918926234	0	pP6(11.5)	A2Pi v=0 10.5 13 F6f - X2Sigma Xv=0 11.5 14 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	3.5	1	3	X2Sigma	3.5	0	1	11525.86509	1	.000748922087914069	0	pQ12(3.5)	A2Pi v=0 3.5  1 F1e - X2Sigma Xv=0 3.5  2 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	3	X2Sigma	4.5	1	1	11512.94485	1	.000512138397870094	0	pQ12(4.5)	A2Pi v=0 4.5  2 F1e - X2Sigma Xv=0 4.5  3 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	3	X2Sigma	2.5	0	2	11530.66089	1	.00103825865808266	0	pQ23(2.5)	A2Pi v=0 2.5  1 F2f - X2Sigma Xv=0 2.5  2 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	3	X2Sigma	3.5	1	2	11515.31777	1	.000773961878882818	0	pQ23(3.5)	A2Pi v=0 3.5  2 F2f - X2Sigma Xv=0 3.5  3 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	3	X2Sigma	4.5	0	2	11499.08068	1	.000545546748571663	0	pQ23(4.5)	A2Pi v=0 4.5  3 F2f - X2Sigma Xv=0 4.5  4 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	3	X2Sigma	5.5	1	2	11481.47945	1	.000385725045884876	0	pQ23(5.5)	A2Pi v=0 5.5  4 F2f - X2Sigma Xv=0 5.5  5 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	1	3	X2Sigma	1.5	0	1	11516.51924	1	.000881605722908894	0	pQ34(1.5)	A2Pi v=0 1.5  1 F3e - X2Sigma Xv=0 1.5  2 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	4	X2Sigma	2.5	1	2	11511.65304	1	.000812492863291631	0	pQ34(2.5)	A2Pi v=0 2.5  2 F3e - X2Sigma Xv=0 2.5  3 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	4	X2Sigma	3.5	0	2	11495.02511	1	.000492846621589683	0	pQ34(3.5)	A2Pi v=0 3.5  3 F3e - X2Sigma Xv=0 3.5  4 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	4	X2Sigma	4.5	1	2	11476.55935	1	.000438026594906953	0	pQ34(4.5)	A2Pi v=0 4.5  4 F3e - X2Sigma Xv=0 4.5  5 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	3	X2Sigma	1.5	1	2	11501.64176	1	.000742230327950523	0	pQ45(1.5)	A2Pi v=0 1.5  2 F4f - X2Sigma Xv=0 1.5  3 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	4	X2Sigma	2.5	0	3	11487.60161	1	.000565265436275904	0	pQ45(2.5)	A2Pi v=0 2.5  3 F4f - X2Sigma Xv=0 2.5  4 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	0.5	0	2	X2Sigma	0.5	1	1	11495.02511	1	.000409827853397883	0	pQ56(0.5)	A2Pi v=0 0.5  2 F5e - X2Sigma Xv=0 0.5  3 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	1	4	X2Sigma	1.5	0	2	11479.6988	1	.000396682644705807	0	pQ56(1.5)	A2Pi v=0 1.5  3 F5e - X2Sigma Xv=0 1.5  4 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	3	X2Sigma	1.5	1	1	11539.54573	1	.00168913714306188	0	pR13(1.5)	A2Pi v=0 2.5  0 F1e - X2Sigma Xv=0 1.5  1 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	3	X2Sigma	2.5	0	2	11526.30983	1	.000294395024148568	0	pR13(2.5)	A2Pi v=0 3.5  1 F1e - X2Sigma Xv=0 2.5  2 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	3	X2Sigma	3.5	1	2	11513.1518	1	9.20615212327294e-5	0	pR13(3.5)	A2Pi v=0 4.5  2 F1e - X2Sigma Xv=0 3.5  3 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	3	X2Sigma	1.5	0	1	11531.69525	1	.000644539791023067	0	pR24(1.5)	A2Pi v=0 2.5  1 F2f - X2Sigma Xv=0 1.5  2 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	3	X2Sigma	2.5	1	2	11516.07226	1	.000224611042220824	0	pR24(2.5)	A2Pi v=0 3.5  2 F2f - X2Sigma Xv=0 2.5  3 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	3	X2Sigma	3.5	0	2	11499.73761	1	.000103543319457774	0	pR24(3.5)	A2Pi v=0 4.5  3 F2f - X2Sigma Xv=0 3.5  4 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	1	3	X2Sigma	0.5	0	1	11517.39392	1	.00079010570774561	0	pR35(0.5)	A2Pi v=0 1.5  1 F3e - X2Sigma Xv=0 0.5  2 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	4	X2Sigma	2.5	0	3	11495.87681	1	8.27348022663791e-5	0	pR35(2.5)	A2Pi v=0 3.5  3 F3e - X2Sigma Xv=0 2.5  4 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	3	X2Sigma	0.5	1	1	11502.28089	1	.000178663795711377	0	pR46(0.5)	A2Pi v=0 1.5  2 F4f - X2Sigma Xv=0 0.5  3 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	3	X2Sigma	2.5	1	1	11560.87325	1	.000472379658587705	0	rP42(2.5)	A2Pi v=0 1.5  2 F4f - X2Sigma Xv=0 2.5  1 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	3	X2Sigma	2.5	0	1	11567.79616	1	.0018486735828683	0	rQ21(2.5)	A2Pi v=0 2.5  1 F2f - X2Sigma Xv=0 2.5  0 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	3	X2Sigma	3.5	1	1	11577.29282	1	.00104808542742151	0	rQ21(3.5)	A2Pi v=0 3.5  2 F2f - X2Sigma Xv=0 3.5  1 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	3	X2Sigma	5.5	1	1	11592.34362	1	.000468329259776746	0	rQ21(5.5)	A2Pi v=0 5.5  4 F2f - X2Sigma Xv=0 5.5  3 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	3	X2Sigma	6.5	0	1	11597.4971	1	.000335070615908592	0	rQ21(6.5)	A2Pi v=0 6.5  5 F2f - X2Sigma Xv=0 6.5  4 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	0	3	X2Sigma	7.5	1	1	11600.9878	1	.000232592854444602	0	rQ21(7.5)	A2Pi v=0 7.5  6 F2f - X2Sigma Xv=0 7.5  5 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	1	3	X2Sigma	8.5	0	1	11602.79657	1	.000162355648854459	0	rQ21(8.5)	A2Pi v=0 8.5  7 F2f - X2Sigma Xv=0 8.5  6 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	4	X2Sigma	2.5	1	1	11571.7417	1	.00212006762159412	0	rQ32(2.5)	A2Pi v=0 2.5  2 F3e - X2Sigma Xv=0 2.5  1 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	4	X2Sigma	3.5	0	1	11579.88596	1	.00127439065558343	0	rQ32(3.5)	A2Pi v=0 3.5  3 F3e - X2Sigma Xv=0 3.5  2 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	4	X2Sigma	4.5	1	1	11585.94577	1	.000834450491708122	0	rQ32(4.5)	A2Pi v=0 4.5  4 F3e - X2Sigma Xv=0 4.5  3 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	4	X2Sigma	5.5	0	1	11590.17388	1	.000583486891632926	0	rQ32(5.5)	A2Pi v=0 5.5  5 F3e - X2Sigma Xv=0 5.5  4 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	3	X2Sigma	1.5	1	1	11562.8526	1	.00104286529912517	0	rQ43(1.5)	A2Pi v=0 1.5  2 F4f - X2Sigma Xv=0 1.5  1 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	4	X2Sigma	2.5	0	2	11572.0585	1	.00140374739231566	0	rQ43(2.5)	A2Pi v=0 2.5  3 F4f - X2Sigma Xv=0 2.5  2 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	4	X2Sigma	3.5	1	2	11577.677555	1	.000960505252631008	0	rQ43(3.5)	A2Pi v=0 3.5  4 F4f - X2Sigma Xv=0 3.5  3 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	4	X2Sigma	4.5	0	2	11581.10948	1	.0006764870593211	0	rQ43(4.5)	A2Pi v=0 4.5  5 F4f - X2Sigma Xv=0 4.5  4 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	4	X2Sigma	5.5	1	2	11582.62358	1	.000469689742763108	0	rQ43(5.5)	A2Pi v=0 5.5  6 F4f - X2Sigma Xv=0 5.5  5 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	4	X2Sigma	6.5	0	2	11582.3197	1	.000323839366350411	0	rQ43(6.5)	A2Pi v=0 6.5  7 F4f - X2Sigma Xv=0 6.5  6 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	0	4	X2Sigma	7.5	1	2	11580.24552	1	.000216925141070808	0	rQ43(7.5)	A2Pi v=0 7.5  8 F4f - X2Sigma Xv=0 7.5  7 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	1	4	X2Sigma	8.5	0	2	11576.4358	1	.000144910648083962	0	rQ43(8.5)	A2Pi v=0 8.5  9 F4f - X2Sigma Xv=0 8.5  8 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	0	4	X2Sigma	9.5	1	2	11570.90996	1	9.47619940191973e-5	0	rQ43(9.5)	A2Pi v=0 9.5 10 F4f - X2Sigma Xv=0 9.5  9 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	1	4	X2Sigma	1.5	0	1	11564.40369	1	.000970904811474511	0	rQ54(1.5)	A2Pi v=0 1.5  3 F5e - X2Sigma Xv=0 1.5  2 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	5	X2Sigma	2.5	1	2	11569.13709	1	.000814203788707825	0	rQ54(2.5)	A2Pi v=0 2.5  4 F5e - X2Sigma Xv=0 2.5  3 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	5	X2Sigma	3.5	0	2	11571.56712	1	.000594902079775173	0	rQ54(3.5)	A2Pi v=0 3.5  5 F5e - X2Sigma Xv=0 3.5  4 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	5	X2Sigma	5.5	0	2	11570.59202	1	.000284946974386046	0	rQ54(5.5)	A2Pi v=0 5.5  7 F5e - X2Sigma Xv=0 5.5  6 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	0	5	X2Sigma	6.5	1	2	11567.40406	1	.0001941723606582	0	rQ54(6.5)	A2Pi v=0 6.5  8 F5e - X2Sigma Xv=0 6.5  7 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	4	X2Sigma	1.5	1	2	11562.03718	1	.00049615490521707	0	rQ65(1.5)	A2Pi v=0 1.5  4 F6f - X2Sigma Xv=0 1.5  3 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	5	X2Sigma	3.5	1	3	11561.85482	1	.000255769107303396	0	rQ65(3.5)	A2Pi v=0 3.5  6 F6f - X2Sigma Xv=0 3.5  5 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	0	5	X2Sigma	7.5	1	3	11540.57357	1	6.08016260421382e-5	0	rQ65(7.5)	A2Pi v=0 7.5 10 F6f - X2Sigma Xv=0 7.5  9 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	3	X2Sigma	2.5	0	1	11563.44128	1	.00265754421649452	0	rR1(2.5)	A2Pi v=0 3.5  1 F1e - X2Sigma Xv=0 2.5  0 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	3	X2Sigma	3.5	1	1	11575.12573	1	.00382328255142549	0	rR1(3.5)	A2Pi v=0 4.5  2 F1e - X2Sigma Xv=0 3.5  1 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	3	X2Sigma	4.5	0	1	11585.13639	1	.00457934677895444	0	rR1(4.5)	A2Pi v=0 5.5  3 F1e - X2Sigma Xv=0 4.5  2 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	0	3	X2Sigma	5.5	1	1	11593.46834	1	.00474832799208076	0	rR1(5.5)	A2Pi v=0 6.5  4 F1e - X2Sigma Xv=0 5.5  3 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	1	2	X2Sigma	6.5	0	1	11600.10244	1	.00500236035874989	0	rR1(6.5)	A2Pi v=0 7.5  5 F1e - X2Sigma Xv=0 6.5  4 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	0	2	X2Sigma	7.5	1	1	11605.02538	1	.00484691528203359	0	rR1(7.5)	A2Pi v=0 8.5  6 F1e - X2Sigma Xv=0 7.5  5 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	1	2	X2Sigma	8.5	0	1	11608.24014	1	.00440948140892465	0	rR1(8.5)	A2Pi v=0 9.5  7 F1e - X2Sigma Xv=0 8.5  6 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	10.5	0	2	X2Sigma	9.5	1	1	11609.72797	1	.00382253983909615	0	rR1(9.5)	A2Pi v=0 10.5  8 F1e - X2Sigma Xv=0 9.5  7 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	11.5	1	2	X2Sigma	10.5	0	1	11609.6887	1	.00315444036289814	0	rR1(10.5)	A2Pi v=0 11.5  9 F1e - X2Sigma Xv=0 10.5  8 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	12.5	0	1	X2Sigma	11.5	1	1	11607.06557	1	.00237423744794268	0	rR1(11.5)	A2Pi v=0 12.5 10 F1e - X2Sigma Xv=0 11.5  9 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	13.5	1	1	X2Sigma	12.5	0	1	11603.72272	1	.00192057660861271	0	rR1(12.5)	A2Pi v=0 13.5 11 F1e - X2Sigma Xv=0 12.5 10 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	14.5	0	1	X2Sigma	13.5	1	1	11598.44908	1	.00141027515097858	0	rR1(13.5)	A2Pi v=0 14.5 12 F1e - X2Sigma Xv=0 13.5 11 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	15.5	1	1	X2Sigma	14.5	0	1	11591.48007	1	.00097968346270212	0	rR1(14.5)	A2Pi v=0 15.5 13 F1e - X2Sigma Xv=0 14.5 12 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	16.5	0	1	X2Sigma	15.5	1	1	11582.84284	1	.000665437726571781	0	rR1(15.5)	A2Pi v=0 16.5 14 F1e - X2Sigma Xv=0 15.5 13 F1e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	3	X2Sigma	2.5	1	1	11576.16021	1	.00196248552375077	0	rR2(2.5)	A2Pi v=0 3.5  2 F2f - X2Sigma Xv=0 2.5  1 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	3	X2Sigma	3.5	0	1	11584.60176	1	.00305380528394557	0	rR2(3.5)	A2Pi v=0 4.5  3 F2f - X2Sigma Xv=0 3.5  2 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	3	X2Sigma	4.5	1	1	11591.48007	1	.00377716505971732	0	rR2(4.5)	A2Pi v=0 5.5  4 F2f - X2Sigma Xv=0 4.5  3 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	3	X2Sigma	5.5	0	1	11596.72341	1	.00407797261542304	0	rR2(5.5)	A2Pi v=0 6.5  5 F2f - X2Sigma Xv=0 5.5  4 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	0	3	X2Sigma	6.5	1	1	11600.29141	1	.00406148481813069	0	rR2(6.5)	A2Pi v=0 7.5  6 F2f - X2Sigma Xv=0 6.5  5 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	1	3	X2Sigma	7.5	0	1	11602.17066	1	.00379553344373037	0	rR2(7.5)	A2Pi v=0 8.5  7 F2f - X2Sigma Xv=0 7.5  6 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	0	3	X2Sigma	8.5	1	1	11602.36185	1	.00335773299966023	0	rR2(8.5)	A2Pi v=0 9.5  8 F2f - X2Sigma Xv=0 8.5  7 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	10.5	1	3	X2Sigma	9.5	0	1	11600.90836	1	.00282471977094868	0	rR2(9.5)	A2Pi v=0 10.5  9 F2f - X2Sigma Xv=0 9.5  8 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	11.5	0	2	X2Sigma	10.5	1	1	11597.01019	1	.0021127434936182	0	rR2(10.5)	A2Pi v=0 11.5 10 F2f - X2Sigma Xv=0 10.5  9 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	12.5	1	2	X2Sigma	11.5	0	1	11592.55202	1	.0017238788058977	0	rR2(11.5)	A2Pi v=0 12.5 11 F2f - X2Sigma Xv=0 11.5 10 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	13.5	0	2	X2Sigma	12.5	1	1	11586.02014	1	.00127539487053383	0	rR2(12.5)	A2Pi v=0 13.5 12 F2f - X2Sigma Xv=0 12.5 11 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	14.5	1	2	X2Sigma	13.5	0	1	11577.80893	1	.000905721732492436	0	rR2(13.5)	A2Pi v=0 14.5 13 F2f - X2Sigma Xv=0 13.5 12 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	15.5	0	2	X2Sigma	14.5	1	1	11567.95883	1	.000628231238104537	0	rR2(14.5)	A2Pi v=0 15.5 14 F2f - X2Sigma Xv=0 14.5 13 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	16.5	1	2	X2Sigma	15.5	0	1	11556.49909	1	.00040695349894014	0	rR2(15.5)	A2Pi v=0 16.5 15 F2f - X2Sigma Xv=0 15.5 14 F2f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	4	X2Sigma	1.5	1	1	11573.7191	1	.000305594110084649	0	rR3(1.5)	A2Pi v=0 2.5  2 F3e - X2Sigma Xv=0 1.5  1 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	4	X2Sigma	2.5	0	2	11580.33122	1	.00179407703952074	0	rR3(2.5)	A2Pi v=0 3.5  3 F3e - X2Sigma Xv=0 2.5  2 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	4	X2Sigma	3.5	1	2	11586.14887	1	.00271097829620902	0	rR3(3.5)	A2Pi v=0 4.5  4 F3e - X2Sigma Xv=0 3.5  3 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	4	X2Sigma	4.5	0	2	11590.30413	1	.00320569531466446	0	rR3(4.5)	A2Pi v=0 5.5  5 F3e - X2Sigma Xv=0 4.5  4 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	0	4	X2Sigma	5.5	1	2	11592.74447	1	.00335852082993193	0	rR3(5.5)	A2Pi v=0 6.5  6 F3e - X2Sigma Xv=0 5.5  5 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	1	4	X2Sigma	6.5	0	2	11593.46834	1	.00324242793280079	0	rR3(6.5)	A2Pi v=0 7.5  7 F3e - X2Sigma Xv=0 6.5  6 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	0	4	X2Sigma	7.5	1	2	11592.48307	1	.00293428002382402	0	rR3(7.5)	A2Pi v=0 8.5  8 F3e - X2Sigma Xv=0 7.5  7 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	1	4	X2Sigma	8.5	0	2	11589.8031	1	.00250942186537577	0	rR3(8.5)	A2Pi v=0 9.5  9 F3e - X2Sigma Xv=0 8.5  8 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	11.5	1	3	X2Sigma	10.5	0	2	11579.27154	1	.00159321511261505	0	rR3(10.5)	A2Pi v=0 11.5 11 F3e - X2Sigma Xv=0 10.5 10 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	13.5	1	3	X2Sigma	12.5	0	2	11562.03718	1	.000837434619992491	0	rR3(12.5)	A2Pi v=0 13.5 13 F3e - X2Sigma Xv=0 12.5 12 F3e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	14.5	0	3	X2Sigma	13.5	1	2	11551.198	1	.00104225065451731	0	rR3(13.5)	A2Pi v=0 14.5 14 F3e - X2Sigma Xv=0 13.5 13 F3e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	2.5	1	4	X2Sigma	1.5	0	1	11573.10067	1	.000888138456591625	0	rR4(1.5)	A2Pi v=0 2.5  3 F4f - X2Sigma Xv=0 1.5  2 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	4	X2Sigma	2.5	1	2	11578.43269	1	.00188235021954855	0	rR4(2.5)	A2Pi v=0 3.5  4 F4f - X2Sigma Xv=0 2.5  3 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	4	X2Sigma	3.5	0	2	11581.76679	1	.00249304512745305	0	rR4(3.5)	A2Pi v=0 4.5  5 F4f - X2Sigma Xv=0 3.5  4 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	4	X2Sigma	4.5	1	2	11583.24761	1	.00276673656291188	0	rR4(4.5)	A2Pi v=0 5.5  6 F4f - X2Sigma Xv=0 4.5  5 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	4	X2Sigma	5.5	0	2	11582.93395	1	.0027669620971899	0	rR4(5.5)	A2Pi v=0 6.5  7 F4f - X2Sigma Xv=0 5.5  6 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	0	4	X2Sigma	6.5	1	2	11580.86955	1	.00256548700203207	0	rR4(6.5)	A2Pi v=0 7.5  8 F4f - X2Sigma Xv=0 6.5  7 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	8.5	1	4	X2Sigma	7.5	0	2	11577.07883	1	.00223631989986999	0	rR4(7.5)	A2Pi v=0 8.5  9 F4f - X2Sigma Xv=0 7.5  8 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	0	4	X2Sigma	8.5	1	2	11571.56712	1	.00184734201127288	0	rR4(8.5)	A2Pi v=0 9.5 10 F4f - X2Sigma Xv=0 8.5  9 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	10.5	1	4	X2Sigma	9.5	0	2	11564.40369	1	.00143141734786519	0	rR4(9.5)	A2Pi v=0 10.5 11 F4f - X2Sigma Xv=0 9.5 10 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	11.5	0	4	X2Sigma	10.5	1	2	11555.56864	1	.00107626234186699	0	rR4(10.5)	A2Pi v=0 11.5 12 F4f - X2Sigma Xv=0 10.5 11 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	12.5	1	4	X2Sigma	11.5	0	2	11545.09	1	.00123381426898307	0	rR4(11.5)	A2Pi v=0 12.5 13 F4f - X2Sigma Xv=0 11.5 12 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	13.5	0	4	X2Sigma	12.5	1	2	11533.011	1	.000970148426266251	0	rR4(12.5)	A2Pi v=0 13.5 14 F4f - X2Sigma Xv=0 12.5 13 F4f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	1.5	1	4	X2Sigma	0.5	0	1	11565.27386	1	.000398155670660777	0	rR5(0.5)	A2Pi v=0 1.5  3 F5e - X2Sigma Xv=0 0.5  2 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	0	5	X2Sigma	1.5	1	2	11569.99437	1	.00129750360723672	0	rR5(1.5)	A2Pi v=0 2.5  4 F5e - X2Sigma Xv=0 1.5  3 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	1	5	X2Sigma	2.5	0	3	11572.41505	1	.00191361749822116	0	rR5(2.5)	A2Pi v=0 3.5  5 F5e - X2Sigma Xv=0 2.5  4 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	1	5	X2Sigma	4.5	0	3	11571.49024	1	.00236798380089068	0	rR5(4.5)	A2Pi v=0 5.5  7 F5e - X2Sigma Xv=0 4.5  6 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	0	5	X2Sigma	5.5	1	3	11568.33092	1	.00224808325780224	0	rR5(5.5)	A2Pi v=0 6.5  8 F5e - X2Sigma Xv=0 5.5  7 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	7.5	1	5	X2Sigma	6.5	0	3	11563.44128	1	.00196340648743244	0	rR5(6.5)	A2Pi v=0 7.5  9 F5e - X2Sigma Xv=0 6.5  8 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	1	5	X2Sigma	8.5	0	3	11548.538	1	.00165322692839241	0	rR5(8.5)	A2Pi v=0 9.5 11 F5e - X2Sigma Xv=0 8.5 10 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	10.5	0	5	X2Sigma	9.5	1	3	11538.59852	1	.00100600157928314	0	rR5(9.5)	A2Pi v=0 10.5 12 F5e - X2Sigma Xv=0 9.5 11 F5e : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	1.5	0	4	X2Sigma	0.5	1	1	11562.67741	1	.000879972850365666	0	rR6(0.5)	A2Pi v=0 1.5  4 F6f - X2Sigma Xv=0 0.5  3 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	2.5	1	5	X2Sigma	1.5	0	2	11563.64742	1	.00153417419858042	0	rR6(1.5)	A2Pi v=0 2.5  5 F6f - X2Sigma Xv=0 1.5  4 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	3.5	0	5	X2Sigma	2.5	1	3	11562.7602	1	.00187871505937034	0	rR6(2.5)	A2Pi v=0 3.5  6 F6f - X2Sigma Xv=0 2.5  5 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	1	5	X2Sigma	3.5	0	3	11560.09208	1	.00204006230228228	0	rR6(3.5)	A2Pi v=0 4.5  7 F6f - X2Sigma Xv=0 3.5  6 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	6.5	1	5	X2Sigma	5.5	0	3	11549.576	1	.00183736918934123	0	rR6(5.5)	A2Pi v=0 6.5  9 F6f - X2Sigma Xv=0 5.5  8 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	7.5	0	5	X2Sigma	6.5	1	3	11541.775	1	.00170343696957041	0	rR6(6.5)	A2Pi v=0 7.5 10 F6f - X2Sigma Xv=0 6.5  9 F6f : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	8.5	1	5	X2Sigma	7.5	0	3	11532.30758	1	.00121377151163878	0	rR6(7.5)	A2Pi v=0 8.5 11 F6f - X2Sigma Xv=0 7.5 10 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	9.5	0	5	X2Sigma	8.5	1	3	11521.21608	1	.00092799411322921	0	rR6(8.5)	A2Pi v=0 9.5 12 F6f - X2Sigma Xv=0 8.5 11 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	10.5	1	5	X2Sigma	9.5	0	3	11508.49452	1	.000677885138884694	0	rR6(9.5)	A2Pi v=0 10.5 13 F6f - X2Sigma Xv=0 9.5 12 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	11.5	0	5	X2Sigma	10.5	1	3	11494.18004	1	.000467138555873466	0	rR6(10.5)	A2Pi v=0 11.5 14 F6f - X2Sigma Xv=0 10.5 13 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	12.5	1	5	X2Sigma	11.5	0	3	11478.29487	1	.000313708212094135	0	rR6(11.5)	A2Pi v=0 12.5 15 F6f - X2Sigma Xv=0 11.5 14 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	4.5	0	5	X2Sigma	3.5	1	3	11572.87	1	.00190979752874253	0	rR5(3.5)	A2Pi v=0 4.5  6 F5e - X2Sigma Xv=0 3.5  5 F5e : Bernath00SpectrumFromSticks.txt
+CaF	A2Pi	4.5	0	5	X2Sigma	4.5	1	2	11572.00103	1	.000349639669201643	0	rQ54(4.5)	A2Pi v=0 4.5  6 F5e - X2Sigma Xv=0 4.5  5 F4f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	5.5	0	5	X2Sigma	4.5	1	3	11555.68835	1	.00188210863698186	0	rR6(4.5)	A2Pi v=0 5.5  8 F6f - X2Sigma Xv=0 4.5  7 F6f : CrH_LIF_to8Feb22.txt
+CaF	A2Pi	0.5	0	2	X2Sigma	1.5	1	1	11555.60147	1	.000563745447556535	0	rP53(1.5)	A2Pi v=0 0.5  2 F5e - X2Sigma Xv=0 1.5  1 F3e : CrH_LIF_to8Feb22.txt
+"/>
+  <FormSettings Name="LineResidualWindow" YAxis="Unweighted Obs-Calc"/>
+</Mixture>
